@@ -1,0 +1,10 @@
+{"ver": "1.0",
+  "execution": {
+    "command": "mvn -Dtest=$testSuite$#$testCase$ test -f /azure-libraries-for-java/$module$/pom.xml -Dsurefire.rerunFailingTestsCount=1 -Dorg.slf4j.simpleLogger.defaultLogLevel=error -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn -Dmaven.repo.local=/repository",
+    "recording": null
+  },
+  "classifier": {
+    "identifier": "$testSuite$#$testCase$",
+    "type": "Unit"
+  }
+},
